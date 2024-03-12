@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import {getFirestore, collection, addDoc, serverTimestamp, query, onSnapshot} from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBSE6JescSDLW3CbT5rH0ygXX0A6jduoBo",
-  authDomain: "test-a5ba3.firebaseapp.com",
-  projectId: "test-a5ba3",
-  storageBucket: "test-a5ba3.appspot.com",
-  messagingSenderId: "711113079464",
-  appId: "1:711113079464:web:400dfee0c9f2dbfadfe09d"
+  apiKey: process.env.EXPO_PUBLIC_API_KEY ,
+  authDomain: process.env.EXPO_PUBLIC_AUTHDOMAIN,
+  projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.EXPO_PUBLIC_STORAGE_BUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.EXPO_PUBLIC_APP_ID
 };
 
 // Initialize Firebase
